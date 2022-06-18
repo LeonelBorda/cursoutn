@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Leonel Borda</title>
+</head>
+<body>
+    <form action="" method="">
+        <h1>Curriculum Vitae</h1>
+        <p>
+            <label for="nombre">Apellido y Nombre</label>
+            <input type="text" name="nombre" placeholder="Apellido y Nombre">
+        </p>
+        
+        <img src="yo.jpg" alt="Foto Leonel Borda">
+
+        <p>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" placeholder="Edad">
+        </p>
+        <p>
+            <label for="domicilio">Domicilio</label>
+            <input type="text" name="Domicilio" placeholder="Domicilio">
+        </p>
+        <p>
+            <label for="mail">Correo Electrónico</label>
+            <input type="email" name="email" placeholder="correo electrónico">
+        </p>
+        <p>
+            <label for="numero">Teléfono/Celular</label>
+            <input type="number" name="numero de contacto" placeholder="teléfono/celular">
+        </p>
+        <p>
+            <label for="sexo">Sexo</label>
+                <ul>
+                    <li>
+                        <input type="radio" name="sexo" value="femenino">
+                        <label for="femenino">Femenino</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="sexo" value="masculino">
+                        <label for="femenino">Masculino</label>
+                    </li>
+                </ul>
+        </p>
+        <p>
+            <label for="título">Título</label>
+            <select name="título">
+                <option value="primario">Primario</option> 
+                <option value="secundario">Secundario</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+            </select>
+            <label for="institución">Institución</label>
+            <input type="text" name="institución" placeholder="institución">
+        </p>
+        <p>
+            <label for="experiencia">Experiencia laboral</label><br>
+            <textarea name="experiencia" placeholder=""></textarea>
+        </p>
+        <p>
+            Comente brevemente aspectos positivos de su personalidad:<br>
+            <textarea name="positivos"></textarea>
+        </p>
+        <p>
+            Comente brevemente aspectos negativos de su personalidad:<br>
+            <textarea name="negativos"></textarea>
+        </p>
+        <p>
+            Comentarios adicionales:<br>
+            <textarea name="adicionales" placeholder="hobbies, deportes, gustos, etc."></textarea>
+        </p>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Borrar todo"/>
+    </form>
+</body>
+</html>
