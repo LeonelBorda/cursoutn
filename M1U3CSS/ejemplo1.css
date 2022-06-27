@@ -1,0 +1,16 @@
+h2{
+    color: red;
+    font-family: Arial;
+    font-size: 30px;
+    text-align: center;
+    background-color: aqua;
+}
+div{
+    width: 200px;
+    height: 230px;
+    background-color: aquamarine;
+
+}
+.destacados{
+    color: rgb(62, 87, 25);
+}
