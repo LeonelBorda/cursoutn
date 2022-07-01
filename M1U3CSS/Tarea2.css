@@ -7,8 +7,19 @@
 
 .foto{
     border: 1px solid rgb(26, 25, 25);
+	border-radius: 5px;
+	width: 170px;
+	height: 220px;
+	background-color: #879f36;
+}
+
+img{
 	width: 150px;
 	height: 200px;
+	margin: auto;
+	margin-top: 10px;
+	display: block;
+	border-radius: 100%;
 }
 
 #titulo{
