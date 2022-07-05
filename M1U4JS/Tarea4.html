@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nombre;
+        var distancia;
+
+        nombre = prompt('Ingrese su nombre:', '')
+
+        distancia = prompt('Ingrese la distancia a recorrer:', '');
+        if (distancia <= 1000) {
+            document.write('Hola ')
+            document.write(nombre)
+            document.write(', Puede ir a pié.')
+        }
+        else {
+            if (distancia <= 10000) {
+                document.write('Se recomienda usar bicicleta')
+            }
+            else {
+                if (distancia <= 30000) {
+                    document.write('Puede ir en colectivo')
+                }
+                else {
+                    if (distancia <= 100000) {
+                        document.write('Se recomienda utilizar su auto particular')
+                    }
+                    else {
+                        if (distancia > 100000) {
+                            document.write('Debe sacar un pasaje de avión')
+                        }
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
