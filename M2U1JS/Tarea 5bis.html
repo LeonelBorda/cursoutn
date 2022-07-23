@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Tarea_5.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="div" id="rosa" onclick="cambio('pink')"></div>
+        <div class="div" id="rojo" onclick="cambio('#ff0000')"></div>
+        <div class="div" id="verde" onclick="cambio('#00ff00')"></div> 
+    </div>
+    
+
+    <script>
+        function cambio(color) {
+            document.querySelector('body').style.background = color;
+        }
+        cambio();
+    </script>
+</body>
+</html>
