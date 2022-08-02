@@ -1,0 +1,62 @@
+.hero {
+    background: url(../img/img1.jpeg) no-repeat;
+    background-size: cover;
+    height: 0.9vh;
+    min-height: 600px;
+    color: black;
+}
+
+footer {
+    background-color: #aaaaaa;
+}
+
+.lista img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista li a {
+    background-color: rgb(216, 214, 214);
+    font-family: Verdana;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(92, 131, 147);
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista li a:hover {
+    color: rgb(42, 72, 62);
+    background-color: rgb(120, 118, 115);
+}
+
+.testimonios {
+    background-color: #aaaaaa;
+    padding-bottom: 5rem !important;
+}
+
+.Testimonio {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.navbar-brand {
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Nova Oval', cursive;
+}
+
+.container-fluid {
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Nova Oval', cursive;
+}
+
+/* font-family: 'Ibarra Real Nova', serif;
+font-family: 'Nova Oval', cursive; */
