@@ -58,5 +58,15 @@ footer {
     font-family: 'Nova Oval', cursive;
 }
 
+.card-img-top{
+    width: 50%;
+	height: 220px;
+    margin: 10px 0px 0px 25%;
+}
+
+.staff{
+    background: beige;
+}
+
 /* font-family: 'Ibarra Real Nova', serif;
 font-family: 'Nova Oval', cursive; */
