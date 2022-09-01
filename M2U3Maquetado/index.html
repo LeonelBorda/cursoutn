@@ -27,34 +27,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Conjuntos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
-                            <li><a class="dropdown-item" href="#">Sin relleno</a></li>
-                            <li><a class="dropdown-item" href="#">Armados</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Bombachas
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
-                            <li><a class="dropdown-item" href="#">Pack X3</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Deportivo</a>
+                        <a class="nav-link active" aria-current="page" href="#productos">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Body</a>
+                        <a class="nav-link active" aria-current="page" href="#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
                     </li>
                 </ul>
-                <br>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -74,18 +65,82 @@
     </div>
     <!-- inicio novedades -->
     <div class="row my-3">
-        <div id="novedades" class="col-md-5 offset-md-2">
+        <div id="productos" class="col-md-5 offset-md-2">
             <h2>Colección Otoño-Invierno</h2>
             <ul class="lista">
-                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/wols.jpeg"
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#conjuntos"><img src="img/wols.jpeg"
                             alt="">Conjuntos</a></li>
-                <li><a href="#"><img src="img/wols.jpeg" alt="">Bombachas</a></li>
-                <li><a href="#"><img src="img/wols.jpeg" alt="">Deportivo</a></li>
-                <li><a href="#"><img src="img/wols.jpeg" alt="">Body</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#bombachas"><img src="img/wols.jpeg"
+                            alt="">Bombachas</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#deportivos"><img src="img/wols.jpeg"
+                            alt="">Deportivos</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#bodys"><img src="img/wols.jpeg"
+                            alt="">Body</a></li>
             </ul>
         </div>
+        <!-- inicio modal -->
+        <div class="modal fade" id="conjuntos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Conjuntos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nostrum explicabo commodi
+                        magnam
+                        consequuntur amet adipisci dolore totam et, quo repellendus mollitia.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="bombachas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bombachas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nostrum explicabo commodi
+                        magnam
+                        consequuntur amet adipisci dolore totam et, quo repellendus mollitia.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="deportivos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deportivos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nostrum explicabo commodi
+                        magnam
+                        consequuntur amet adipisci dolore totam et, quo repellendus mollitia.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="bodys" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Body</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nostrum explicabo commodi
+                        magnam
+                        consequuntur amet adipisci dolore totam et, quo repellendus mollitia.
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- inicio testimonios -->
-        <div class="col-md-3 my-3">
+        <div id="testimonios" class="col-md-3 my-3">
             <div class="rounded py-5 testimonios">
                 <h2>Testimonios</h2>
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -127,25 +182,6 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- inicio modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Conjuntos</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nostrum explicabo commodi
-                    magnam
-                    consequuntur amet adipisci dolore totam et, quo repellendus mollitia.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -201,13 +237,13 @@
         </div>
     </div>
     <!-- inicio visitanos -->
-    <div id="visitanos" class="row py-4 scroll-section">
+    <div id="contacto" class="row py-4 scroll-section">
         <div class="col-md-4 offset-md-2">
             <h2>Visitanos</h2>
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104764.32725084049!2d-58.654246751085104!3d-34.85911112154506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd9e6c9c7d059%3A0x49f36492ecf105de!2sTrist%C3%A1n%20Su%C3%A1rez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1659729283311!5m2!1ses!2sar"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -253,7 +289,6 @@
             </div>
         </div>
     </div>
-
     <!-- inicio footer -->
     <div>
         <footer>
