@@ -1,0 +1,208 @@
+.navbar {
+    background-color: #fdcff3;
+}
+
+.navbar-brand {
+    color: #000000;
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Nova Oval', cursive;
+}
+
+.hero {
+    background: url(../img/banner.jpeg) no-repeat;
+    background-size: cover;
+    height: 0.9vh;
+    min-height: 630px;
+    color: black;
+    display: flex;
+}
+
+@media screen and (max-width: 700px) {
+    .hero {
+        background: url(../img/banner2.jpeg);
+        background-size: cover;
+        max-width: 700px;
+    }
+}
+
+.algo {
+    margin: 20vh 0 0 30vh;
+}
+
+footer {
+    background-color: #aaaaaa;
+}
+
+.lista img {
+    width: 280px;
+    height: 380px;
+    margin: 5px 5px 5px 0;
+}
+
+.lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista a {
+    font-family: Verdana;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #c297b8;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista a:hover {
+    color: #dd89be;
+    background-color: #ccd5f9;
+}
+
+.carrusel {
+    /* background-color: #aaaaaa; */
+    padding-bottom: 2rem !important;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.muestra {
+    text-align: center;
+    /* padding: 50px 30px; */
+}
+
+.muestra img {
+    width: 100%;
+    height: 100%;
+}
+
+.contacto {
+    background-color: #dbd5d4;
+}
+
+.container-fluid {
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Nova Oval', cursive;
+}
+
+/* todas las secciones */
+
+.hero-secciones {
+    place-items: center;
+}
+
+.algo-secciones {
+    margin: 20vh 0 0 40%;
+}
+
+.algo-secciones a {
+    text-decoration: none;
+    color: black;
+}
+
+.algo-secciones a:hover {
+    color: #fdcff3;
+}
+
+/* sección deportivo */
+
+.algo-deportivo a:hover {
+    color: #fdcff3;
+}
+
+.producto-deportivo a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.producto-deportivo h5 {
+    margin: 5px 0 12px 28px;
+}
+
+.producto-deportivo img {
+    width: 220px;
+    height: 320px;
+    margin: 75px 5px 5px 28px;
+    transition: transform .75s;
+}
+
+.producto-deportivo img:hover {
+    transform: scale(1.15);
+}
+
+/* sección conjuntos */
+
+.producto-conjunto a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.producto-conjunto h5 {
+    margin: 5px 0 12px 28px;
+}
+
+.producto-conjunto img {
+    width: 220px;
+    height: 320px;
+    margin: 75px 5px 5px 28px;
+    transition: transform .75s;
+}
+
+.producto-conjunto img:hover {
+    transform: scale(1.15);
+}
+
+/* sección bodys */
+
+.producto-body a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.producto-body h5 {
+    margin: 5px 0 12px 28px;
+}
+
+.producto-body img {
+    width: 220px;
+    height: 320px;
+    margin: 75px 5px 5px 28px;
+    transition: transform .75s;
+}
+
+.producto-body img:hover {
+    transform: scale(1.15);
+}
+
+/* sección bombacha */
+
+.producto-bombacha a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.producto-bombacha h5 {
+    margin: 5px 0 12px 28px;
+}
+
+.producto-bombacha img {
+    width: 220px;
+    height: 320px;
+    margin: 75px 5px 5px 28px;
+    transition: transform .75s;
+}
+
+.producto-bombacha img:hover {
+    transform: scale(1.15);
+}
+
+/* modales */
+
+.modales img{
+    height: 100%;
+    width: 100%;
+}
+
+/* font-family: 'Ibarra Real Nova', serif;
+font-family: 'Nova Oval', cursive; */

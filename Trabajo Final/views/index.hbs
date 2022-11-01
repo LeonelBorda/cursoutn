@@ -10,17 +10,44 @@
     <div id="productos" class="col my-3">
         <div class="container">
             <div class="row row-cols-2 lista">
-              <div class="col"><a href="./conjuntos" target="_blank" data-bs-target="#conjuntos"><img src="img/conjunto.jpeg"
+                {{#each productos}}
+                <div class="col"><a data-bs-toggle="modal" data-bs-target="#modal{{id}}" href=""><img src="{{imagen}}"
+                alt="">{{producto}}</a></div>
+                {{/each}}
+              {{!-- <div class="col"><a href="./conjuntos" target="_blank" data-bs-target="#conjuntos"><img src="img/conjunto.jpeg"
                 alt="">Conjuntos</a></div>
               <div class="col"><a href="./bombachas" target="_blank" data-bs-target="#conjuntos"><img src="img/bombacha.jpeg"
                 alt="">Bombachas</a></div>
               <div class="col"><a href="./deportivos" target="_blank" data-bs-target="#conjuntos"><img src="img/deportivo.jpeg"
                 alt="">Deportivos</a></div>
               <div class="col"><a href="./bodys" target="_blank" data-bs-target="#conjuntos"><img src="img/body.jpeg"
-                alt="">Bodys</a></div>
+                alt="">Bodys</a></div> --}}
             </div>
         </div>
     </div>
+    {{!-- MODALES --}}
+    {{!-- modales deportivos --}}
+    {{#each productos}}
+    <div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{producto}}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modales modal-dialog modal-dialog-center modal-dialog-scrollable">
+                    <img src="{{imagen}}" alt="">
+                </div>
+                <div>
+                    <h4>{{precio}}</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
     <!-- inicio carrusel -->
     <div class="row my-3 row-cols-3">
         <div id="carrusel" class="col carrusel">

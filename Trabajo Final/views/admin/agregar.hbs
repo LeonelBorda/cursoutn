@@ -1,0 +1,23 @@
+
+<div class="container" style="margin: 60px 10px 5px 5px;">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h5>Agregar producto</h5>
+            <form action="/admin/productos/agregar" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Producto" name="producto">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Precio" name="precio">
+                </div>
+                <div class="form-group">
+                    <label>Imagen: <input type="file" name="imagen" id="imagen" /></label>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

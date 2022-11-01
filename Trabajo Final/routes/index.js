@@ -1,10 +1,36 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var productosModel = require('../models/productosModel')
+var cloudinary = require('cloudinary').v2;
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', async function(req, res, next) {
+
+  var productos = await productosModel.getProductos()
+
+  productos = productos.splice(0, 5);
+  productos = productos.map(producto => {
+    if(producto.img_id) {
+      const imagen = cloudinary.url(producto.img_id, {
+        width: 600,
+        crop: 'fill'
+      });
+      return {
+        ...producto,
+        imagen
+      }
+    } else {
+      return {
+        ...producto,
+        imagen: ''
+      }
+    }
+  })
+
+  res.render('index', {
+    productos
+  });
 });
 
 router.post('/', async(req, res, next) => {
